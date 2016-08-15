@@ -24,6 +24,6 @@
     [self.view addSubview:sc];
 }
 
-//一大堆的bug
+//一值在测试
 
 @end
