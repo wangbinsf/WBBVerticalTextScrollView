@@ -13,7 +13,7 @@
 @end
 
 @implementation ViewController
-//提交到了git
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     WBBVerticalTextScrollView *sc = [[WBBVerticalTextScrollView alloc]init];
