@@ -36,5 +36,8 @@
  *  用户能不能收到滑动
  */
 @property (nonatomic, assign) BOOL userInteraction;
+/**
+ *  用于点击交互
+ */
 @property (nonatomic, assign) id<WBBVerticalTextScrollViewDelegate> delegate;
 @end
