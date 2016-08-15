@@ -1,42 +1,61 @@
-#==============================================================================#
-# This file specifies intentionally untracked files that git should ignore.
-# See: http://www.kernel.org/pub/software/scm/git/docs/gitignore.html
+# Xcode
 #
-# This file is intentionally different from the output of `git svn show-ignore`,
-# as most of those are useless.
-#==============================================================================#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-#==============================================================================#
-# File extensions to be ignored anywhere in the tree.
-#==============================================================================#
-# Temp files created by most text editors.
-*~
-# Merge files created by git.
-*.orig
-# Byte compiled Python modules.
-*.pyc
-# vim swap files
-.*.sw[a-z]
-.sw?
+## Build generated
+build/
+DerivedData/
 
-#==============================================================================#
-# Explicit files to ignore (only matches one).
-#==============================================================================#
-cscope.files
-cscope.out
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
 
-#==============================================================================#
-# Directories to ignore (do not add trailing '/'s, they skip symlinks).
-#==============================================================================#
-# Generated docs
-docs/_build
+## Other
+*.moved-aside
+*.xcuserstate
 
-# Finder metadata
-.DS_Store
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcuserstate
 
-#==============================================================================#
-# Ignore CMake temporary files
-#==============================================================================#
-CMakeCache.txt
-CMakeFiles
-.atom-build.json
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the 
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/screenshots
+
+# Code Injection
+#
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
